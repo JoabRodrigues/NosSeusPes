@@ -12,5 +12,6 @@ namespace ModelNosSeusPes
         public int Quantidade { get; set; }
         public Cor Cor { get; set; }
         public Modelo Modelo { get; set; }
+        public IList<Venda> Vendas { get; set; }
     }
 }

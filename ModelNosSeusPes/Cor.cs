@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ModelNosSeusPes
 {
-    class Cor
+    public class Cor
     {
         public int Id { get; set; }
         public String Nome { get; set; } 
