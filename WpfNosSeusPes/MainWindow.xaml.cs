@@ -23,6 +23,13 @@ namespace WpfNosSeusPes
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = this;
+        }
+
+        private void BtnClientes_Click(object sender, RoutedEventArgs e)
+        {
+            WpfCliente WpfCliente = new WpfCliente();
+            WpfCliente.Show();
         }
     }
 }

@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WpfNosSeusPes.ViewModel;
 
 namespace WpfNosSeusPes
 {
@@ -19,9 +20,23 @@ namespace WpfNosSeusPes
     /// </summary>
     public partial class WpfCliente : Window
     {
+        public PessoasViewModel PessoasViewModel { get; set; }
         public WpfCliente()
         {
             InitializeComponent();
+            this.PessoasViewModel = new PessoasViewModel();
+            this.DataContext = this;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.PessoasViewModel.Adicionar();
+        }
+
+        private void BtnSalvar_Click(object sender, RoutedEventArgs e)
+        {
+            this.PessoasViewModel.Salvar();
+            this.Close();
         }
     }
 }
