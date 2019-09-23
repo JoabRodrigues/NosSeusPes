@@ -32,31 +32,31 @@
 
         <Border Grid.Column="0" Grid.Row="0" Style="{StaticResource listHeaderStyle}">
 
-            <Label Style="{StaticResource listHeaderTextStyle}">Cliente:</Label>
+            <Label Style="{StaticResource listHeaderTextStyle}" FontSize="24" FontFamily="Times New Roman">Cliente:</Label>
 
         </Border>
 
         <Border Grid.Column="0" Grid.Row="1" Style="{StaticResource listHeaderStyle}">
 
-            <Label Style="{StaticResource listHeaderTextStyle}">Data:</Label>
+            <Label Style="{StaticResource listHeaderTextStyle}" FontFamily="Times New Roman" FontSize="24">Data:</Label>
 
         </Border>
 
         <Border Grid.Column="0" Grid.Row="2" Style="{StaticResource listHeaderStyle}">
 
-            <Label Style="{StaticResource listHeaderTextStyle}">Preço:</Label>
+            <Label Style="{StaticResource listHeaderTextStyle}" FontFamily="Times New Roman" FontSize="24">Preço:</Label>
 
         </Border>
 
         <Border Grid.Column="0" Grid.Row="3" Style="{StaticResource listHeaderStyle}">
 
-            <Label Style="{StaticResource listHeaderTextStyle}">Quantidade:</Label>
+            <Label Style="{StaticResource listHeaderTextStyle}" FontFamily="Times New Roman" FontSize="24">Quantidade:</Label>
 
         </Border>
 
-        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="10,12,0,0" Grid.Row="7" VerticalAlignment="Top" Width="124" Height="31"/>
+        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="10,12,0,0" Grid.Row="7" VerticalAlignment="Top" Width="124" Height="31" FontFamily="Times New Roman" FontSize="24"/>
 
-        <Button x:Name="btnFinalizar" Content="Finalizar" Grid.Column="1" HorizontalAlignment="Left" Margin="262,12,0,0" Grid.Row="7" VerticalAlignment="Top" Width="124" Height="31"/>
+        <Button x:Name="btnFinalizar" Content="Finalizar" Grid.Column="1" HorizontalAlignment="Left" Margin="262,12,0,0" Grid.Row="7" VerticalAlignment="Top" Width="124" Height="31" FontSize="24" FontFamily="Times New Roman"/>
 
     </Grid>
 
