@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ModelNosSeusPes
+namespace NosSeusPes
 {
     public class PessoaJuridica : Pessoa
     {
