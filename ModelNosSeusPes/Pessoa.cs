@@ -4,6 +4,7 @@ using System.Text;
 
 namespace ModelNosSeusPes
 {
+    [Table("Pessoas")]
     public class Pessoa
     {
         public int Id { get; set; }
