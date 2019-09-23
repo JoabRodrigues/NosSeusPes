@@ -7,6 +7,35 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <DataGrid></DataGrid>
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition/>
+
+            <RowDefinition/>
+
+            <RowDefinition/>
+
+            <RowDefinition/>
+
+            <RowDefinition/>
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition/>
+
+        </Grid.ColumnDefinitions>
+        <Border Grid.Column="0" Grid.Row="0" Style="{StaticResource listHeaderStyle}">
+            <Label Style="{StaticResource listHeaderTextStyle}" FontSize="24" FontFamily="Times New Roman" HorizontalAlignment="Center" VerticalAlignment="Center">NOS SEUS PÉS</Label>
+        </Border>
+        
+        <Button Content="Clientes" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="772" Height="64" FontSize="36" FontFamily="Tahoma"/>
+        <Button Content="Produtos" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="772" Height="64" FontSize="36" FontFamily="Tahoma"/>
+        <Button Content="Vendas" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="772" Height="64" FontSize="36" FontFamily="Tahoma"/>
+
+
     </Grid>
+
 </Window>
