@@ -30,10 +30,10 @@
         <Border Grid.Column="0" Grid.Row="0" Style="{StaticResource listHeaderStyle}">
             <Label Style="{StaticResource listHeaderTextStyle}" FontSize="24" FontFamily="Times New Roman" HorizontalAlignment="Center" VerticalAlignment="Center">NOS SEUS PÉS</Label>
         </Border>
-        
-        <Button Content="Clientes" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="772" Height="64" FontSize="36" FontFamily="Tahoma"/>
-        <Button Content="Produtos" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="772" Height="64" FontSize="36" FontFamily="Tahoma"/>
-        <Button Content="Vendas" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="772" Height="64" FontSize="36" FontFamily="Tahoma"/>
+
+        <Button x:Name="btnClientes" Content="Clientes" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="772" Height="64" FontSize="36" FontFamily="Tahoma" Background="#FFDCCE76" BorderBrush="#FF0611F9"/>
+        <Button x:Name="btnProdutos" Content="Produtos" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="772" Height="64" FontSize="36" FontFamily="Tahoma" Background="#FFDCCE76" BorderBrush="#FF063DF9"/>
+        <Button x:Name="btnVendas" Content="Vendas" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="772" Height="64" FontSize="36" FontFamily="Tahoma" Background="#FFDCCE76" BorderBrush="#FF0A2BF9"/>
 
 
     </Grid>
