@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WpfNosSeusPes.ViewModel;
 
 namespace WpfNosSeusPes
 {
@@ -19,9 +20,17 @@ namespace WpfNosSeusPes
     /// </summary>
     public partial class WpfProdutos : Window
     {
+        public SapatoViewModel SapatoViewModel { get; set; }
         public WpfProdutos()
         {
             InitializeComponent();
+            this.SapatoViewModel = new SapatoViewModel();
+            this.DataContext = this; ;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.SapatoViewModel.Adicionar();
         }
     }
 }

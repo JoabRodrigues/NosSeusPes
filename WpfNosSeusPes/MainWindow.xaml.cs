@@ -31,5 +31,11 @@ namespace WpfNosSeusPes
             WpfCliente WpfCliente = new WpfCliente();
             WpfCliente.Show();
         }
+
+        private void btnProdutos_Click(object sender, RoutedEventArgs e)
+        {
+            WpfProdutos wpfProdutos = new WpfProdutos();
+            wpfProdutos.Show();
+        }
     }
 }

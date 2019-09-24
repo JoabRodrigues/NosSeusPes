@@ -65,6 +65,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="ViewModel\PessoasViewModel.cs" />
+    <Compile Include="ViewModel\SapatoViewModel.cs" />
     <Compile Include="WpfCadastro.xaml.cs">
       <DependentUpon>WpfCadastro.xaml</DependentUpon>
     </Compile>
