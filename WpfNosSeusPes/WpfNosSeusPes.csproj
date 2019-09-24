@@ -75,6 +75,9 @@
     <Compile Include="WpfProdutos.xaml.cs">
       <DependentUpon>WpfProdutos.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WpfVenda.xaml.cs">
+      <DependentUpon>WpfVenda.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -96,6 +99,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WpfProdutos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WpfVenda.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

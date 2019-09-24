@@ -42,19 +42,19 @@
 
         </Border>
 
-        <Border Grid.Column="0" Grid.Row="1" Style="{StaticResource listHeaderStyle}">
+        <Border Grid.Column="0" Grid.Row="1" >
 
             <Label Style="{StaticResource listHeaderTextStyle}" FontFamily="Times New Roman" FontSize="24">Endereço:</Label>
 
         </Border>
 
-        <Border Grid.Column="0" Grid.Row="3" Style="{StaticResource listHeaderStyle}">
+        <Border Grid.Column="0" Grid.Row="3" >
 
             <Label Style="{StaticResource listHeaderTextStyle}" FontFamily="Times New Roman" FontSize="24">CPF:</Label>
 
         </Border>
 
-        <Border Grid.Column="0" Grid.Row="4" Style="{StaticResource listHeaderStyle}">
+        <Border Grid.Column="0" Grid.Row="4" >
 
             <Label Style="{StaticResource listHeaderTextStyle}" FontFamily="Times New Roman" FontSize="24">Data de nascimento:</Label>
 
@@ -66,7 +66,7 @@
 
         </Border>
 
-        <Border Grid.Column="0" Grid.Row="6" Style="{StaticResource listHeaderStyle}">
+        <Border Grid.Column="0" Grid.Row="6" >
 
             <Label Style="{StaticResource listHeaderTextStyle}" FontFamily="Times New Roman" FontSize="24">CNPJ:</Label>
 
