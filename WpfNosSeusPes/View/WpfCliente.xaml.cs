@@ -32,11 +32,28 @@ namespace WpfNosSeusPes
         {
             this.PessoasViewModel.Adicionar();
         }
+        
+        private void Deletar_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
 
         private void BtnSalvar_Click(object sender, RoutedEventArgs e)
         {
             this.PessoasViewModel.Salvar();
             this.Close();
         }
+
+        private void BtnCancelar_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+
     }
 }
