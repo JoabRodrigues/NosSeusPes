@@ -4,7 +4,7 @@ using System.Text;
 
 namespace NosSeusPes
 {
-    public class PessoaFisica : Pessoa
+    public class PessoaFisica : Sapato
     {
         public String CPF { get; set; }
         public DateTime DataNascimento { get; set; }
