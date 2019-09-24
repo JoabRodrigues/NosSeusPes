@@ -12,7 +12,7 @@ namespace NosSeusPes
         public DateTime Data { get; set; }
         public Double Preco { get; set; }
         public int Quantidade { get; set; }
-        public Sapato Cliente { get; set; }
+        public Pessoa Cliente { get; set; }
         public IList<Sapato> Sapatos { get; set; }
     }
 }
