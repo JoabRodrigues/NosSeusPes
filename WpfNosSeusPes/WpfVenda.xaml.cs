@@ -11,26 +11,18 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using WpfNosSeusPes.ViewModel;
 
 namespace WpfNosSeusPes
 {
     /// <summary>
-    /// Lógica interna para WpfProdutos.xaml
+    /// Lógica interna para WpfVenda.xaml
     /// </summary>
-    public partial class WpfProdutos : Window
+    public partial class WpfVenda : Window
     {
-        public SapatoViewModel SapatoViewModel { get; set; }
-        public WpfProdutos()
+        public WpfVenda()
         {
             InitializeComponent();
-            this.SapatoViewModel = new SapatoViewModel();
-            this.DataContext = this; ;
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            this.SapatoViewModel.Adicionar();
+            
         }
     }
 }
