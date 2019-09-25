@@ -43,5 +43,16 @@ namespace WpfNosSeusPes
         {
             VendasViewModel.AdicionarVendaItem();
         }
+
+        private void BtnCancelar_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void BtnConcluir_Click(object sender, RoutedEventArgs e)
+        {
+            VendasViewModel.Salvar();
+            Close();
+        }
     }
 }

@@ -14,6 +14,7 @@ namespace WpfNosSeusPes.ViewModel
         public Venda VendaSelecionada { get; set; }
         public List<Pessoa> Pessoas { get; set; }
         public List<VendaItem> VendaItens { get; set; }
+        public List<Sapato> Sapatos { get; set; }
         private ModelNosSeusPes Context { get; set; }
 
         public VendasViewModel()
@@ -23,9 +24,8 @@ namespace WpfNosSeusPes.ViewModel
             Vendas = new ObservableCollection<Venda>(Context.Vendas.ToList());
             VendaSelecionada = Context.Vendas.FirstOrDefault();
             Pessoas = new List<Pessoa>(Context.Pessoas.ToList());
+            Sapatos = Context.Sapatos.ToList();
 
-            // consulta para trazer apenas os itens da venda em questão
-            //VendaItens = new List<VendaItem>(Context.VendaItens.ToList());
         }
 
         public void Adicionar()
@@ -42,7 +42,7 @@ namespace WpfNosSeusPes.ViewModel
         {
             VendaItem vi = new VendaItem();
             VendaSelecionada.VendaItens.Add(vi);
-            Context.VendaItens.Add(vi);
+           
         }
 
         public void Salvar()
