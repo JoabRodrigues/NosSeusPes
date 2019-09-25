@@ -1,0 +1,63 @@
+﻿<Window x:Class="WpfNosSeusPes.WpfVenda"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfNosSeusPes"
+        mc:Ignorable="d"
+        
+        Title="WpfVenda" Height="450" Width="800">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="Adicionar" Grid.Column="0" Grid.Row="0" Click="Button_Click">Adicionar Venda</Button>
+        <Button x:Name="Deletar" Grid.Column="1" Grid.Row="0" Click="Deletar_Click">Excluir Venda</Button>
+
+        <DataGrid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="2" ItemsSource="{Binding Path=VendasViewModel.Vendas}" AutoGenerateColumns="False" SelectedItem="{Binding Path=VendasViewModel.VendaSelecionada}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding Id}" />
+                <DataGridTextColumn Header="Data" Binding="{Binding Data}" />
+                <DataGridTextColumn Header="ValorTotal" Binding="{Binding ValorTotal}" />
+                <DataGridTextColumn Header="Cliente" Binding="{Binding Cliente.Nome}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Border Grid.Column="0" Grid.Row="3" >
+            <Label FontSize="15" FontFamily="Times New Roman">Cliente:</Label>
+        </Border>
+        <Border Grid.Column="1" Grid.Row="3">
+            <ComboBox FontFamily="Times New Roman" FontSize="15" ItemsSource="{Binding Path=VendasViewModel.Pessoas}" DisplayMemberPath="Nome" SelectedItem="{Binding Path=VendasViewModel.VendaSelecionada.Cliente}" />
+        </Border>
+
+        <Button x:Name="AdicionarSapato" Grid.Column="0" Grid.Row="4" Click="AdicionarSapato_Click">Adicionar Sapato</Button>
+        <Button x:Name="DeletarSapato" Grid.Column="1" Grid.Row="4">Excluir Sapato</Button>
+
+        <DataGrid Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="2" ItemsSource="{Binding Path=VendaViewModel.VendaSelecionada.VendaItens}" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridComboBoxColumn Header="Sapato"/>
+                <DataGridTextColumn Header="Preço" Binding="{Binding Preco}" />
+                <DataGridTextColumn Header="Quantidade" Binding="{Binding Quantidade}" />
+                <DataGridTextColumn Header="ValotTotal" Binding="{Binding ValorTotal}" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Grid.Row="7" VerticalAlignment="Top" Width="101" Height="34" Background="#FFF33838"/>
+        <Button x:Name="btnConcluir" Content="Finalizar" Grid.Column="1" HorizontalAlignment="Right" Grid.Row="7" VerticalAlignment="Top" Width="101" Height="34" Background="#FF1EF33B"/>
+
+    </Grid>
+
+</Window>

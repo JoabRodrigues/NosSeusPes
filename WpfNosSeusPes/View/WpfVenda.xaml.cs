@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WpfNosSeusPes.ViewModel;
 
 namespace WpfNosSeusPes
 {
@@ -19,10 +20,28 @@ namespace WpfNosSeusPes
     /// </summary>
     public partial class WpfVenda : Window
     {
+        public VendasViewModel VendasViewModel { get; set; }
         public WpfVenda()
         {
             InitializeComponent();
+            VendasViewModel = new VendasViewModel();
+            DataContext = this;
             
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            VendasViewModel.Adicionar();
+        }
+
+        private void Deletar_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AdicionarSapato_Click(object sender, RoutedEventArgs e)
+        {
+            VendasViewModel.AdicionarVendaItem();
         }
     }
 }

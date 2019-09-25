@@ -64,6 +64,18 @@
     <Compile Include="Migrations\201909250336503_finl.designer.cs">
       <DependentUpon>201909250336503_finl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201909250440518_FinalVendas.cs" />
+    <Compile Include="Migrations\201909250440518_FinalVendas.designer.cs">
+      <DependentUpon>201909250440518_FinalVendas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909250458208_add vendaitens.cs" />
+    <Compile Include="Migrations\201909250458208_add vendaitens.designer.cs">
+      <DependentUpon>201909250458208_add vendaitens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909250518059_correcao vendaitens.cs" />
+    <Compile Include="Migrations\201909250518059_correcao vendaitens.designer.cs">
+      <DependentUpon>201909250518059_correcao vendaitens.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ModelNosSeusPes.cs" />
     <Compile Include="Pessoa.cs" />
@@ -72,6 +84,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sapato.cs" />
     <Compile Include="Venda.cs" />
+    <Compile Include="VendaItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -84,6 +97,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201909250336503_finl.resx">
       <DependentUpon>201909250336503_finl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909250440518_FinalVendas.resx">
+      <DependentUpon>201909250440518_FinalVendas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909250458208_add vendaitens.resx">
+      <DependentUpon>201909250458208_add vendaitens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909250518059_correcao vendaitens.resx">
+      <DependentUpon>201909250518059_correcao vendaitens.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

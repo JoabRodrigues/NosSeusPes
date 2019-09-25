@@ -24,6 +24,8 @@ namespace NosSeusPes
         public virtual DbSet<Pessoa> Pessoas { get; set; }
         public virtual DbSet<Sapato> Sapatos { get; set; }
         public virtual DbSet<Marca> Marcas { get; set; }
+        public virtual DbSet<Venda> Vendas { get; set; }
+        public virtual DbSet<VendaItem> VendaItens { get; set; }
 
 
     }

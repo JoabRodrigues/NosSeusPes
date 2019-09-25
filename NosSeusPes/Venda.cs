@@ -10,9 +10,9 @@ namespace NosSeusPes
     {
         public int Id { get; set; }
         public DateTime Data { get; set; }
-        public Double Preco { get; set; }
-        public int Quantidade { get; set; }
+        
+        public Double ValorTotal { get; set; }
         public Pessoa Cliente { get; set; }
-        public IList<Sapato> Sapatos { get; set; }
+        public IList<VendaItem> VendaItens { get; set; }
     }
 }

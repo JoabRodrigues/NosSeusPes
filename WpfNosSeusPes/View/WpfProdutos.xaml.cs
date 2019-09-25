@@ -25,7 +25,7 @@ namespace WpfNosSeusPes
         {
             InitializeComponent();
             this.SapatoViewModel = new SapatoViewModel();
-            this.DataContext = this; ;
+            this.DataContext = this; 
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

@@ -72,16 +72,14 @@
     </Compile>
     <Compile Include="ViewModel\PessoasViewModel.cs" />
     <Compile Include="ViewModel\SapatoViewModel.cs" />
-    <Compile Include="WpfCadastro.xaml.cs">
-      <DependentUpon>WpfCadastro.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="ViewModel\VendasViewModel.cs" />
     <Compile Include="View\WpfCliente.xaml.cs">
       <DependentUpon>WpfCliente.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\WpfProdutos.xaml.cs">
       <DependentUpon>WpfProdutos.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WpfVenda.xaml.cs">
+    <Compile Include="View\WpfVenda.xaml.cs">
       <DependentUpon>WpfVenda.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
@@ -104,10 +102,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="WpfCadastro.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="View\WpfCliente.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -116,7 +110,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="WpfVenda.xaml">
+    <Page Include="View\WpfVenda.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
