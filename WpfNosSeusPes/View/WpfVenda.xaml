@@ -46,7 +46,7 @@
         <Button x:Name="AdicionarSapato" Grid.Column="0" Grid.Row="4" Click="AdicionarSapato_Click">Adicionar Sapato</Button>
         <Button x:Name="DeletarSapato" Grid.Column="1" Grid.Row="4">Excluir Sapato</Button>
 
-        <DataGrid Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="2" ItemsSource="{Binding Path=VendaViewModel.VendaSelecionada.VendaItens}" AutoGenerateColumns="False">
+        <DataGrid Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="2" ItemsSource="{Binding Path=VendasViewModel.VendaSelecionada.VendaItens}" AutoGenerateColumns="False">
             <DataGrid.Columns>
                 <DataGridComboBoxColumn Header="Sapato"/>
                 <DataGridTextColumn Header="Preço" Binding="{Binding Preco}" />
