@@ -65,15 +65,11 @@
             <TextBox Text="{Binding Path=PessoasViewModel.PessoaSelecionada.Endereco}"/>
         </Border>
 
+        <StackPanel Grid.Row="6" Grid.ColumnSpan="2" Grid.RowSpan="2" x:Name="PessoaContent">
+            
+        </StackPanel>
 
-        <Border Grid.Column="0" Grid.Row="6">
-            <Label FontSize="15" FontFamily="Times New Roman">CPF:</Label>
-        </Border>
-
-        <Border Grid.Column="0" Grid.Row="7">
-            <Label FontFamily="Times New Roman" FontSize="15">Data Nascimento:</Label>
-        </Border>
-
+     
         <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="10,12,0,0" Grid.Row="8" VerticalAlignment="Top" Width="124" Height="31" FontFamily="Times New Roman" FontSize="24" Background="#FFF33838" Click="BtnCancelar_Click"/>
 
         <Button x:Name="btnSalvar" Content="Salvar" Grid.Column="1" HorizontalAlignment="Left" Margin="262,12,0,0" Grid.Row="8" VerticalAlignment="Top" Width="124" Height="31" FontSize="24" FontFamily="Times New Roman" Background="#FF1EF33B" Click="BtnSalvar_Click"/>

@@ -64,6 +64,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="PessoaFisicaUC.xaml.cs">
+      <DependentUpon>PessoaFisicaUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PessoaJuridicaUC.xaml.cs">
+      <DependentUpon>PessoaJuridicaUC.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModel\PessoasViewModel.cs" />
     <Compile Include="ViewModel\SapatoViewModel.cs" />
     <Compile Include="WpfCadastro.xaml.cs">
@@ -90,6 +96,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="PessoaFisicaUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PessoaJuridicaUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WpfCadastro.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

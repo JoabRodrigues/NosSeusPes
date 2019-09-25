@@ -24,17 +24,40 @@ namespace WpfNosSeusPes.ViewModel
             this.PessoaSelecionada = Context.Pessoas.FirstOrDefault();
         }
 
-        public void Adicionar()
+        public void Adicionar(int Tipo)
         {
-            Pessoa p = new Pessoa();
-            this.Pessoas.Add(p);
-            this.Context.Pessoas.Add(p);
-            this.PessoaSelecionada = p;
+           
+            if(Tipo == 1)
+            {
+                PessoaFisica p = new PessoaFisica();
+                p.DataNascimento = new DateTime();
+                this.Pessoas.Add(p);
+                this.Context.Pessoas.Add(p);
+                this.PessoaSelecionada = p;
+            }
+            else
+            {
+                PessoaJuridica p = new PessoaJuridica();
+                this.Pessoas.Add(p);
+                this.Context.Pessoas.Add(p);
+                this.PessoaSelecionada = p;
+            }
+            
         }
 
         public void Salvar()
         {
-            this.Context.SaveChanges();
+            Context.SaveChanges();
+        }
+
+        public void Excluir()
+        {
+            if (this.PessoaSelecionada.Id != 0)
+            {
+                this.Context.Pessoas.Remove(
+                    this.PessoaSelecionada);
+            }
+            this.Pessoas.Remove(this.PessoaSelecionada);
         }
     }
 }
