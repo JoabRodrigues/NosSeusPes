@@ -13,6 +13,8 @@ namespace WpfNosSeusPes.ViewModel
         public ObservableCollection<Sapato> Sapatos { get; set; }
 
         public Sapato SapatoSelecionado { get; set; }
+        public List<Cor> Cores { get; set; }
+        public List<Marca> Marcas { get; set; }
 
         private ModelNosSeusPes Context { get; set; }
         public Sapato p { get; private set; }
@@ -21,21 +23,34 @@ namespace WpfNosSeusPes.ViewModel
         {
             Context = new ModelNosSeusPes();
 
-            this.Sapatos = new ObservableCollection<Sapato>(Context.Sapatos.ToList());
-            this.SapatoSelecionado = Context.Sapatos.FirstOrDefault();
+            Sapatos = new ObservableCollection<Sapato>(Context.Sapatos.ToList());
+            SapatoSelecionado = Context.Sapatos.FirstOrDefault();
+
+            Cores = new List<Cor>(Context.Cores.ToList());
+            Marcas = new List<Marca>(Context.Marcas.ToList());
         }
 
         public void Adicionar()
         {
             Sapato s = new Sapato();
-            this.Sapatos.Add(s);
-            this.Context.Sapatos.Add(s);
-            this.SapatoSelecionado = s;
+            Sapatos.Add(s);
+            Context.Sapatos.Add(s);
+            SapatoSelecionado = s;
+        }
+
+        public void Excluir()
+        {
+            if (SapatoSelecionado.Id != 0)
+            {
+                Context.Sapatos.Remove(
+                    SapatoSelecionado);
+            }
+            Sapatos.Remove(SapatoSelecionado);
         }
 
         public void Salvar()
         {
-            this.Context.SaveChanges();
+            Context.SaveChanges();
         }
 
     }

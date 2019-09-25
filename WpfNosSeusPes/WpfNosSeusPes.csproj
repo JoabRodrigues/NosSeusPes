@@ -78,7 +78,7 @@
     <Compile Include="View\WpfCliente.xaml.cs">
       <DependentUpon>WpfCliente.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WpfProdutos.xaml.cs">
+    <Compile Include="View\WpfProdutos.xaml.cs">
       <DependentUpon>WpfProdutos.xaml</DependentUpon>
     </Compile>
     <Compile Include="WpfVenda.xaml.cs">
@@ -112,7 +112,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="WpfProdutos.xaml">
+    <Page Include="View\WpfProdutos.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -21,10 +21,10 @@ namespace NosSeusPes
         // on configuring and using a Code First model, see http://go.microsoft.com/fwlink/?LinkId=390109.
 
         public virtual DbSet<Cor> Cores { get; set; }
-
         public virtual DbSet<Pessoa> Pessoas { get; set; }
-
         public virtual DbSet<Sapato> Sapatos { get; set; }
+        public virtual DbSet<Marca> Marcas { get; set; }
+
 
     }
 

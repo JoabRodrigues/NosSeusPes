@@ -32,5 +32,21 @@ namespace WpfNosSeusPes
         {
             this.SapatoViewModel.Adicionar();
         }
+
+        private void Deletar_Click(object sender, RoutedEventArgs e)
+        {
+            SapatoViewModel.Excluir();
+        }
+
+        private void BtnSalvar_Click(object sender, RoutedEventArgs e)
+        {
+            SapatoViewModel.Salvar();
+            Close();
+        }
+
+        private void BtnVoltar_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }

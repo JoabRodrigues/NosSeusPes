@@ -56,14 +56,16 @@
   <ItemGroup>
     <Compile Include="Cor.cs" />
     <Compile Include="Marca.cs" />
-    <Compile Include="Material.cs" />
     <Compile Include="Migrations\201909232242054_inicio.cs" />
     <Compile Include="Migrations\201909232242054_inicio.designer.cs">
       <DependentUpon>201909232242054_inicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201909250336503_finl.cs" />
+    <Compile Include="Migrations\201909250336503_finl.designer.cs">
+      <DependentUpon>201909250336503_finl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ModelNosSeusPes.cs" />
-    <Compile Include="Modelo.cs" />
     <Compile Include="Pessoa.cs" />
     <Compile Include="PessoaFisica.cs" />
     <Compile Include="PessoaJuridica.cs" />
@@ -79,6 +81,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201909232242054_inicio.resx">
       <DependentUpon>201909232242054_inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909250336503_finl.resx">
+      <DependentUpon>201909250336503_finl.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

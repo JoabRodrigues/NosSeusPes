@@ -18,12 +18,18 @@
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method
             //  to avoid creating duplicate seed data.
-
+            /*
             context.Cores.AddOrUpdate(x => x.Id,
                 new Cor() { Id = 1, Nome = "Branco" },
                 new Cor() { Id = 2, Nome = "Preto" },
                 new Cor() { Id = 3, Nome = "Amarelo" }
                 );
+
+            context.Marcas.AddOrUpdate(x => x.Id,
+                new Marca() { Id = 1, Nome = "Adidas"},
+                new Marca() { Id = 2, Nome = "Nike"},
+                new Marca() { Id = 3, Nome = "Puma"}
+                );*/
         }
     }
 }
