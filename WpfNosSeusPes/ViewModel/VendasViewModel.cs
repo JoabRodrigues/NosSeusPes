@@ -35,6 +35,16 @@ namespace WpfNosSeusPes.ViewModel
 
         }
 
+        public void ExcluirVenda()
+        {
+            if (VendaSelecionada.Id != 0)
+            {
+                Context.Vendas.Remove(
+                    VendaSelecionada);
+            }
+            Vendas.Remove(VendaSelecionada);
+        }
+
         public void Adicionar()
         {
             Venda v = new Venda();

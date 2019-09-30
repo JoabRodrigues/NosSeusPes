@@ -36,7 +36,7 @@ namespace WpfNosSeusPes
 
         private void Deletar_Click(object sender, RoutedEventArgs e)
         {
-
+            VendasViewModel.ExcluirVenda();
         }
 
         private void AdicionarSapato_Click(object sender, RoutedEventArgs e)
@@ -54,5 +54,6 @@ namespace WpfNosSeusPes
             VendasViewModel.Salvar();
             Close();
         }
+
     }
 }

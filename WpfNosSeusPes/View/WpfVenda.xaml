@@ -46,8 +46,7 @@
             <ComboBox FontFamily="Times New Roman" FontSize="15" ItemsSource="{Binding Path=VendasViewModel.Pessoas}" DisplayMemberPath="Nome" SelectedItem="{Binding Path=VendasViewModel.VendaSelecionada.Cliente}" />
         </Border>
 
-        <Button x:Name="AdicionarSapato" Grid.Column="0" Grid.Row="4" Click="AdicionarSapato_Click">Adicionar Sapato</Button>
-        <Button x:Name="DeletarSapato" Grid.Column="1" Grid.Row="4">Excluir Sapato</Button>
+        <Button x:Name="AdicionarSapato" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2" Click="AdicionarSapato_Click">Adicionar Sapato</Button>
 
         <DataGrid Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="2" ItemsSource="{Binding Path=VendasViewModel.VendaSelecionada.VendaItens}" AutoGenerateColumns="False">
             <DataGrid.Columns>
@@ -56,7 +55,6 @@
                                         DisplayMemberPath="Nome"
                                         SelectedItemBinding="{Binding Sapato}"
                                         SelectedValuePath="Id"/>
-                <DataGridTextColumn Header="Sapato Selecionado" Binding="{Binding Sapato.Nome}" />
                 <DataGridTextColumn Header="Preço" Binding="{Binding Preco}" />
                 <DataGridTextColumn Header="Quantidade" Binding="{Binding Quantidade}" />
             </DataGrid.Columns>
