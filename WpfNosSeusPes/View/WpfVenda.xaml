@@ -54,11 +54,11 @@
                 <DataGridComboBoxColumn Header="Sapato" 
                                         ItemsSource="{Binding Source={StaticResource SapatosList}}"
                                         DisplayMemberPath="Nome"
-                                        SelectedValueBinding="{Binding Sapato.Id}"
+                                        SelectedItemBinding="{Binding Sapato}"
                                         SelectedValuePath="Id"/>
+                <DataGridTextColumn Header="Sapato Selecionado" Binding="{Binding Sapato.Nome}" />
                 <DataGridTextColumn Header="Preço" Binding="{Binding Preco}" />
                 <DataGridTextColumn Header="Quantidade" Binding="{Binding Quantidade}" />
-                <DataGridTextColumn Header="ValotTotal" Binding="{Binding ValorTotal}" />
             </DataGrid.Columns>
         </DataGrid>
 

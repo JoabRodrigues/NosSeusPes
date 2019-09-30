@@ -22,6 +22,13 @@ namespace WpfNosSeusPes.ViewModel
             Context = new ModelNosSeusPes();
 
             Vendas = new ObservableCollection<Venda>(Context.Vendas.ToList());
+
+            foreach(Venda v in Vendas)
+            {
+                v.VendaItens = new ObservableCollection<VendaItem>();
+
+                v.VendaItens = Context.VendaItens.Where(i => i.Venda.Id == v.Id).ToList();
+            }
             VendaSelecionada = Context.Vendas.FirstOrDefault();
             Pessoas = new List<Pessoa>(Context.Pessoas.ToList());
             Sapatos = Context.Sapatos.ToList();
