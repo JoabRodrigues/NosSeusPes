@@ -76,6 +76,10 @@
     <Compile Include="Migrations\201909250518059_correcao vendaitens.designer.cs">
       <DependentUpon>201909250518059_correcao vendaitens.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201909302320599_final2.cs" />
+    <Compile Include="Migrations\201909302320599_final2.designer.cs">
+      <DependentUpon>201909302320599_final2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ModelNosSeusPes.cs" />
     <Compile Include="Pessoa.cs" />
@@ -106,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201909250518059_correcao vendaitens.resx">
       <DependentUpon>201909250518059_correcao vendaitens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909302320599_final2.resx">
+      <DependentUpon>201909302320599_final2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
